@@ -34,6 +34,7 @@ Fill each cell per column with standard deviation
 # Fill each cell per column with standard deviation
 for (i in 1:ncol(merged_data)) {
   std[1, i] <- sd(merged_data[, i])
+  
 }
 Combine train dataset with the label
 labeled_train <- cbind(train_label, train)
